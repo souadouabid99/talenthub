@@ -1,59 +1,84 @@
-# Talenthub
+# TalentHub
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.5.
+Aplicación web desarrollada con Angular para gestionar información de empleados, proyectos y tareas.
 
-## Development server
+El proyecto está en desarrollo y se irá ampliando con nuevas funcionalidades.
 
-To start a local development server, run:
+## Requisitos
 
-```bash
-ng serve
-```
+- Node.js
+- npm
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Comprueba que están instalados:
 
 ```bash
-ng generate component component-name
+node --version
+npm --version
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Instalación
+
+1. Clona o descarga el proyecto.
+2. Entra en la carpeta del proyecto.
+3. Instala las dependencias:
 
 ```bash
-ng generate --help
+npm install
 ```
 
-## Building
+## Desarrollo
 
-To build the project run:
+Inicia el servidor de desarrollo con:
 
 ```bash
-ng build
+npm start
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Después abre `http://localhost:4200/` en el navegador.
 
-## Running unit tests
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## Comandos disponibles
 
-```bash
-ng test
+| Comando | Descripción |
+| --- | --- |
+| `npm start` | Inicia el servidor de desarrollo. |
+| `npm run build` | Compila la aplicación. |
+| `npm run watch` | Compila y vuelve a compilar al detectar cambios. |
+| `npm test` | Ejecuta las pruebas unitarias. |
+| `npm run lint` | Comprueba errores de estilo y TypeScript con ESLint. |
+
+## Estructura principal
+
+```text
+src/
+├── app/
+│   ├── features/
+│   │   ├── empleados/
+│   │   │   └── models/
+│   │   └── proyectos/
+│   │       └── models/
+│   ├── app.ts
+│   ├── app.html
+│   └── app.routes.ts
+├── main.ts
+└── styles.scss
 ```
 
-## Running end-to-end tests
+### Organización recomendada
 
-For end-to-end (e2e) testing, run:
+- `models/`: interfaces y tipos de datos.
+- `features/`: funcionalidades agrupadas por dominio, como empleados o proyectos.
+- `services/`: comunicación con APIs y lógica reutilizable.
+- `app.routes.ts`: rutas de la aplicación.
+- `styles.scss`: estilos globales.
 
-```bash
-ng e2e
-```
+## Modelos actuales
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+El proyecto incluye modelos para:
 
-## Additional Resources
+- Empleados.
+- Proyectos.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Estado del proyecto
+
+Proyecto en desarrollo.
