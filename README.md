@@ -64,11 +64,10 @@ src/
 └── styles.scss
 ```
 
-### Organización recomendada
+### Organización
 
 - `models/`: interfaces y tipos de datos.
 - `features/`: funcionalidades agrupadas por dominio, como empleados o proyectos.
-- `services/`: comunicación con APIs y lógica reutilizable.
 - `app.routes.ts`: rutas de la aplicación.
 - `styles.scss`: estilos globales.
 
